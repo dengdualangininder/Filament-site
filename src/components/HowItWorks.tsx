@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Eyebrow, Reveal, Section } from './ui/primitives'
 
 const STEPS = [
@@ -24,12 +25,13 @@ const STEPS = [
 ]
 
 export function HowItWorks() {
+  const { t } = useTranslation()
   return (
     <Section id="how">
       <Reveal>
-        <Eyebrow>How it works</Eyebrow>
+        <Eyebrow>{t('howItWorks.eyebrow')}</Eyebrow>
         <h2 className="mt-4 max-w-3xl font-display text-section text-balance text-ink">
-          Four moves from idea to running system.
+          {t('howItWorks.title')}
         </h2>
       </Reveal>
 

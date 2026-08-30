@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Eyebrow, Reveal, Section } from './ui/primitives'
 import { WorkflowCanvas } from './canvas/WorkflowCanvas'
 import { visionWorkflow } from '../data/workflows'
@@ -31,16 +32,16 @@ const VISIONS = [
 ]
 
 export function FutureVision() {
+  const { t } = useTranslation()
   return (
     <Section id="vision" className="bg-[#0B0C0E]">
       <Reveal>
-        <Eyebrow>Future vision</Eyebrow>
+        <Eyebrow>{t('vision.eyebrow')}</Eyebrow>
         <h2 className="mt-4 max-w-3xl font-display text-section text-balance text-ink">
-          Toward an operating system for AI work.
+          {t('vision.title')}
         </h2>
         <p className="mt-5 max-w-prose text-[17px] leading-relaxed text-muted">
-          The canvas you&apos;ve seen is real. The layers above it are the roadmap. We label
-          them honestly: what exists today, and what&apos;s coming next.
+          {t('vision.subtitle')}
         </p>
       </Reveal>
 
@@ -69,7 +70,7 @@ export function FutureVision() {
       </Reveal>
 
       <p className="mt-6 font-mono text-[11px] text-faint">
-        Vision items are roadmap direction, not shipped features.
+        {t('vision.disclaimer')}
       </p>
     </Section>
   )

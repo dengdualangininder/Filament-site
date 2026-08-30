@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { KIND_META } from './canvas/nodeVisuals'
 import type { NodeKind } from '../lib/types'
 
@@ -23,6 +24,7 @@ const COLS = [
 ]
 
 export function Footer() {
+  const { t } = useTranslation()
   return (
     <footer className="border-t border-line bg-canvas">
       <div className="container-page py-14">
@@ -39,10 +41,10 @@ export function Footer() {
               <span className="font-display text-[17px] font-600 tracking-tight text-ink">Filament</span>
             </div>
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-muted">
-              A visual workspace for designing, connecting, and running enterprise AI systems.
+              {t('footer.tagline')}
             </p>
             <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
-              Not a chatbot. A platform.
+              {t('footer.tagline2')}
             </p>
           </div>
 
@@ -73,8 +75,8 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-2 text-[12px] text-faint sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Filament. Concept site — no engine required.</p>
-          <p>Built as a static, deployable showcase.</p>
+          <p>© {new Date().getFullYear()} Filament. {t('footer.copyright')}</p>
+          <p>{t('footer.built')}</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import { Eyebrow, Reveal, Section } from './ui/primitives'
 import { WorkflowCanvas } from './canvas/WorkflowCanvas'
 import { anatomyWorkflow } from '../data/workflows'
 
-const PRIMITIVES: Array<{ k: 'trigger' | 'agent' | 'tool' | 'data' | 'decision' | 'mcp' | 'approval' | 'output'; label: string; desc: string }> = [
+const PRIMITIVES: Array<{ k: 'trigger'|'agent'|'tool'|'data'|'decision'|'mcp'|'approval'|'output'; label: string; desc: string }> = [
   { k: 'trigger', label: 'Trigger', desc: 'Starts the flow — event, schedule, or webhook.' },
   { k: 'agent', label: 'AI Agent', desc: 'Reasons, selects tools, and transforms data.' },
   { k: 'tool', label: 'Tools', desc: 'Callable capabilities the agent can invoke.' },
@@ -14,16 +15,16 @@ const PRIMITIVES: Array<{ k: 'trigger' | 'agent' | 'tool' | 'data' | 'decision' 
 ]
 
 export function WorkflowAnatomy() {
+  const { t } = useTranslation()
   return (
     <Section id="anatomy">
       <Reveal>
-        <Eyebrow>Workflow anatomy</Eyebrow>
+        <Eyebrow>{t('anatomy.eyebrow')}</Eyebrow>
         <h2 className="mt-4 max-w-3xl font-display text-section text-balance text-ink">
-          Eight primitives. Infinite systems.
+          {t("anatomy.title")}
         </h2>
         <p className="mt-5 max-w-prose text-[17px] leading-relaxed text-muted">
-          Every workflow is composed from the same set of building blocks. Combine them and
-          you get anything from a single lookup to a multi-step enterprise process.
+          {t('anatomy.subtitle')}
         </p>
       </Reveal>
 

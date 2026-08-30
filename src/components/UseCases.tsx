@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Eyebrow, Reveal, Section } from './ui/primitives'
 import { WorkflowCanvas } from './canvas/WorkflowCanvas'
 import { useCaseWorkflows } from '../data/workflows'
@@ -27,15 +28,16 @@ const TABS = [
 ] as const
 
 export function UseCases() {
+  const { t } = useTranslation()
   const [active, setActive] = useState<(typeof TABS)[number]['key']>('banking')
   const graph = useCaseWorkflows[active]
 
   return (
     <Section id="usecases">
       <Reveal>
-        <Eyebrow>Use cases</Eyebrow>
+        <Eyebrow>{t('useCases.eyebrow')}</Eyebrow>
         <h2 className="mt-4 max-w-3xl font-display text-section text-balance text-ink">
-          One canvas, every department.
+          {t('useCases.title')}
         </h2>
       </Reveal>
 
@@ -69,7 +71,7 @@ export function UseCases() {
             {TABS.find((t) => t.key === active)?.blurb}
           </p>
           <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.18em] text-faint">
-            See the flow →
+            {t('useCases.seeFlow')}
           </p>
         </div>
         <WorkflowCanvas graph={graph} compact hideInspector className="h-[340px] sm:h-[400px]" />
