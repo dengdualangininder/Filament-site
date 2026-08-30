@@ -12,10 +12,10 @@ export function ProductPhilosophy() {
       {/* Massive statement — the core split of responsibility */}
       <Reveal delay={0.04}>
         <h2 className="mt-6 font-display text-[clamp(2.4rem,7vw,6.5rem)] leading-[0.96] tracking-[-0.03em] text-balance">
-          <span className="text-ink">Human designs</span>{' '}
+          <span className="text-ink">t('philosophy.human designs')</span>{' '}
           <span className="text-faint">the system.</span>
           <br />
-          <span className="text-accent">AI executes</span>{' '}
+          <span className="text-accent">t('philosophy.ai executes')</span>{' '}
           <span className="text-faint">the system.</span>
         </h2>
       </Reveal>
