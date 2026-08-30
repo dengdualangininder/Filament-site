@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "product": "产品",
+    "anatomy": "构架",
+    "useCases": "应用场景",
+    "howItWorks": "工作原理",
+    "vision": "愿景",
+    "explore": "探索平台",
+    "viewGithub": "查看 GitHub"
+  },
+  "hero": {
+    "eyebrow": "可视化 AI 工作流平台",
+    "title": "构建 AI 系统",
+    "titleAccent": "可视化",
+    "subtitle": "在节点画布上设计、连接并编排 AI 代理、工具和业务工作流。将人类的软件构建方式应用到 AI 上。",
+    "ctaPrimary": "构建您的第一个系统",
+    "ctaSecondary": "查看 GitHub",
+    "stats": {
+      "components": "节点类型",
+      "industries": "行业就绪",
+      "approval": "人工审核节点"
+    },
+    "canvas": {
+      "title": "实时工作流画布",
+      "subtitle": "交互式预览 — 拖拽、缩放、点击节点",
+      "legend": {
+        "trigger": "触发器",
+        "agent": "AI 代理",
+        "tool": "工具",
+        "decision": "决策",
+        "approval": "人工审核",
+        "output": "输出"
+      },
+      "inspector": {
+        "title": "节点检查器",
+        "type": "类型",
+        "config": "配置",
+        "status": "状态",
+        "statusReady": "就绪",
+        "statusActive": "活跃",
+        "close": "关闭检查器"
+      },
+      "run": "运行"
+    }
+  },
+  "productCanvas": {
+    "title": "画布，而非聊天框",
+    "subtitle": "您的 AI 工作流是一个节点组成的有向图，而非 transcript。",
+    "point1": "每一个节点都是一种类型化的原语：触发器、代理、工具、决策、审核、输出。",
+    "point2": "边也是类型化的：数据流、控制流、升级。",
+    "point3": "像检查生产系统一样检查、调试和版本化整个图。"
+  },
+  "problem": {
+    "eyebrow": "这个问题是什么",
+    "title": "提示。 对话。 复制。 粘贴。 重复。",
+    "subtitle": "大多数团队正在使用与 2009 年使用 Google 相同的方式：一次一个提示，没有记忆，没有系统。",
+    "bullets": [
+      "每个团队成员都用自己的语言提示相同的模型。",
+      "最佳结果藏在私有的聊天历史里。其他人无法受益。",
+      "批准、分支、重试、审计 — 都要手动完成。",
+      "没有版本控制。没有审查。没有合规记录。"
+    ],
+    "tagline": "一条聊天记录不是一个系统。"
+  },
+  "newParadigm": {
+    "eyebrow": "新的范式",
+    "title": "从 提示 转向 系统",
+    "subtitle": "停止与 AI 对话，开始以它为中心地构建。",
+    "before": {
+      "label": "之前",
+      "steps": ["人类", "提示", "AI", "复制结果", "人类"]
+    },
+    "after": {
+      "label": "之后",
+      "steps": ["触发器", "代理", "工具", "决策", "审核", "执行"]
+    },
+    "footnote": "相同的 AI 能力 —— 包装成人类可以拥有、审计和改进的系统。"
+  },
+  "anatomy": {
+    "eyebrow": "工作流构架",
+    "title": "八大构建模块。无限系统。",
+    "subtitle": "Filament 中的每个工作流都由这些类型化的原语组成。像拼积木一样拼装，或像 Grasshopper 一样操作。",
+    "categories": {
+      "trigger": "触发器",
+      "ai": "AI",
+      "tools": "工具",
+      "data": "数据",
+      "logic": "逻辑",
+      "mcp": "MCP",
+      "human": "人工",
+      "output": "输出"
+    },
+    "descriptions": {
+      "trigger": "事件源：Webhook、调度、表单、邮件、文件上传、手动运行。",
+      "ai": "推理节点：大语言模型、代理、分类器、规划器、检索器。",
+      "tools": "外部操作：Web 搜索、发送邮件、创建工单、调用 API。",
+      "data": "数据管道：获取、转换、丰富、向量化、路由文档。",
+      "logic": "控制流程：分支、循环、开关、并行、合并、错误路径。",
+      "mcp": "模型上下文协议：连接任何 MCP 服务器 — 客户关系管理、数据库、文件、工具。",
+      "human": "人机交互：审核、批准、编辑、覆盖。",
+      "output": "结果接收器：响应、Webhook、数据库、通知、制品。"
+    }
+  },
+  "useCases": {
+    "eyebrow": "应用场景",
+    "title": "一个平台。每个行业。",
+    "subtitle": "相同的原语组合成截然不同的系统。",
+    "industries": {
+      "banking": {
+        "name": "银行",
+        "nodes": ["客户请求", "代理", "身份验证", "风险检查", "人工审核", "银行 API"]
+      },
+      "hr": {
+        "name": "人力资源",
+        "nodes": ["新员工", "代理", "HR 系统", "账号 provisioning", "审核", "通知"]
+      },
+      "support": {
+        "name": "客户支持",
+        "nodes": ["客户消息", "分类", "知识检索", "代理", "升级"]
+      },
+      "engineering": {
+        "name": "软件工程",
+        "nodes": ["问题", "代理", "代码仓库", "代码", "测试", "审核", "部署"]
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "工作原理",
+    "title": "从空白画布到生产系统，只需四步。",
+    "steps": {
+      "design": {
+        "label": "设计",
+        "title": "设计",
+        "body": "拖拽节点到画布上。可视化设置类型、参数和连接。"
+      },
+      "connect": {
+        "label": "连接",
+        "title": "连接",
+        "body": "连接工具、API、MCP 服务器、数据源和审核队列。"
+      },
+      "run": {
+        "label": "运行",
+        "title": "运行",
+        "body": "手动运行、调度运行或通过 Webhook 触发。实时检查每一步。"
+      },
+      "observe": {
+        "label": "观察",
+        "title": "观察",
+        "body": "跟踪执行、回放运行、审计日志，持续改进图表。"
+      }
+    }
+  },
+  "architecture": {
+    "eyebrow": "AI + MCP 架构",
+    "title": "AI 代理，连接万物。",
+    "subtitle": "AI 代理不应孤立工作。Filament 将其连接到您业务正在使用的系统。",
+    "agent": "AI 代理",
+    "agentNote": "推理、计划、调用工具、转换数据。",
+    "connections": {
+      "crm": "CRM",
+      "database": "数据库",
+      "files": "文件",
+      "apis": "API",
+      "internal": "内部工具",
+      "web": "网页",
+      "code": "代码"
+    },
+    "footnote": "每条连接都是一个节点。每一个节点都可审计、可版本化、可替换。"
+  },
+  "philosophy": {
+    "eyebrow": "产品哲学",
+    "line1": "人类的角色：设计算法。",
+    "line2": "AI 的职责：执行系统。",
+    "human": {
+      "title": "人类拥有",
+      "items": ["工作流", "权限", "工具", "业务规则", "审核节点"]
+    },
+    "ai": {
+      "title": "AI 运行",
+      "items": ["推理", "工具选择", "执行", "转换", "生成"]
+    }
+  },
+  "vision": {
+    "eyebrow": "未来愿景",
+    "title": "Filament 正在走向哪里。",
+    "subtitle": "Stage 1 是您正在阅读的静态站点。以下均为路线图 —  — 不是承诺，尚未是产品。",
+    "items": {
+      "visualWorkflows": {
+        "title": "可视化工作流",
+        "body": "您看到的页面演变为一个真正可运行的编辑器。"
+      },
+      "aiAgents": {
+        "title": "AI 代理",
+        "body": "持久可调试的代理 —  — 不是无状态的对话线程。"
+      },
+      "multiAgent": {
+        "title": "多代理系统",
+        "body": "多个代理在同一画布上协作、协商，交接工作。"
+      },
+      "enterprise": {
+        "title": "企业自动化",
+        "body": "组织级治理、角色访问控制、审计和审核策略。"
+      },
+      "os": {
+        "title": "AI 操作系统",
+        "body": "长期愿景：AI 时代以工作流为主要计算单位。"
+      }
+    },
+    "tag": "愿景 · 即将到来"
+  },
+  "cta": {
+    "title": "构建您的 AI 系统",
+    "subtitle": "Stage 1 是静态展示。Stage 2 将是一个可运行的编辑器。关注仓库，fork，或联系我们共同塑造未来。",
+    "explore": "探索平台",
+    "github": "查看 GitHub"
+  },
+  "footer": {
+    "tagline": "以可视化方式构建 AI 系统。",
+    "links": {
+      "repo": "仓库",
+      "design": "设计笔记",
+      "license": "许可证"
+    },
+    "builtWith": "使用 React、TypeScript、Vite、Tailwind 构建。Stage 1 — 静态。",
+    "copyright": "© 2026 Filament。概念站点。暂无引擎、暂无后端、暂无 AI API。"
+  }
+}

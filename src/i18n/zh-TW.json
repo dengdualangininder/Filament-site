@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "product": "產品",
+    "anatomy": "架構",
+    "useCases": "應用場景",
+    "howItWorks": "運作方式",
+    "vision": "未來藍圖",
+    "explore": "前往平台",
+    "viewGithub": "GitHub 原始碼"
+  },
+  "hero": {
+    "eyebrow": "視覺化 AI 工作流程平台",
+    "title": "用視覺化方式",
+    "titleAccent": "打造 AI 系統",
+    "subtitle": "在節點式畫布上設計、串接並管理 AI 代理、工具與企業級工作流程。就像人類打造軟體的方式 —— 現在也能用來打造 AI。",
+    "ctaPrimary": "建立你的第一個系統",
+    "ctaSecondary": "前往 GitHub",
+    "stats": {
+      "components": "節點類型",
+      "industries": "適用產業",
+      "approval": "人工審核閘道"
+    },
+    "canvas": {
+      "title": "即時工作流程畫布",
+      "subtitle": "互動式預覽 —— 拖曳、縮放、點擊節點",
+      "legend": {
+        "trigger": "觸發器",
+        "agent": "AI 代理",
+        "tool": "工具",
+        "decision": "判斷",
+        "approval": "人工審核",
+        "output": "輸出"
+      },
+      "inspector": {
+        "title": "節點檢視器",
+        "type": "類型",
+        "config": "設定",
+        "status": "狀態",
+        "statusReady": "就緒",
+        "statusActive": "執行中",
+        "close": "關閉檢視器"
+      },
+      "run": "執行"
+    }
+  },
+  "productCanvas": {
+    "title": "畫布，而不是對話框",
+    "subtitle": "你的 AI 工作流程是一張有向節點圖，而不是一段對話紀錄。",
+    "point1": "每個節點都是型別化原語：觸發器、代理、工具、判斷、審核、輸出。",
+    "point2": "連線也是型別化：資料流、控制流、升級。",
+    "point3": "像管理任何正式系統一樣檢視、除錯、版本化這張圖。"
+  },
+  "problem": {
+    "eyebrow": "問題",
+    "title": "下提示。對話。複製。貼上。重複。",
+    "subtitle": "大部分團隊使用 AI 的方式，跟 2009 年使用 Google 一樣：一次一個提示，沒有記憶、沒有系統。",
+    "bullets": [
+      "每位成員用各自的措辭向同一個模型下指令。",
+      "最好的成果都躺在私人的對話紀錄裡，其他人看不到也用不到。",
+      "審核、分支、重試、稽核，全部都靠人工。",
+      "沒有版本控管、沒有審閱、沒有合規軌跡。"
+    ],
+    "tagline": "對話紀錄不是系統。"
+  },
+  "newParadigm": {
+    "eyebrow": "新範式",
+    "title": "從提示走向系統",
+    "subtitle": "別再跟 AI 對話。開始跟它一起設計。",
+    "before": {
+      "label": "以前",
+      "steps": ["人", "提示", "AI", "複製結果", "人"]
+    },
+    "after": {
+      "label": "現在",
+      "steps": ["觸發器", "代理", "工具", "判斷", "審核", "執行"]
+    },
+    "footnote": "同一個 AI 能力 —— 包進一個人類能擁有、能稽核、能持續改善的系統裡。"
+  },
+  "anatomy": {
+    "eyebrow": "工作流程解剖",
+    "title": "八種基礎方塊。無限種系統組合。",
+    "subtitle": "Filament 中的每個工作流程都由這些型別化原語組成。像樂高一樣拼裝，或像 Grasshopper 一樣組合。",
+    "categories": {
+      "trigger": "觸發器",
+      "ai": "AI",
+      "tools": "工具",
+      "data": "資料",
+      "logic": "邏輯",
+      "mcp": "MCP",
+      "human": "人工",
+      "output": "輸出"
+    },
+    "descriptions": {
+      "trigger": "事件來源：Webhook、排程、表單、信件、上傳檔案、手動執行。",
+      "ai": "推理節點：LLM、代理、分類器、規劃器、檢索器。",
+      "tools": "外部動作：網頁搜尋、寄信、開立工單、呼叫 API。",
+      "data": "資料管線：取資料、轉換、擴充、向量化、文件路由。",
+      "logic": "控制流程：分支、迴圈、切換、平行、合併、錯誤路徑。",
+      "mcp": "Model Context Protocol：連接任何 MCP 伺服器 —— CRM、資料庫、檔案、工具。",
+      "human": "Human-in-the-loop：審閱、核准、編輯、覆寫。",
+      "output": "結果出口：回應、Webhook、資料庫、通知、產出物。"
+    }
+  },
+  "useCases": {
+    "eyebrow": "應用場景",
+    "title": "一個平台，覆蓋所有產業。",
+    "subtitle": "同一套原語，可以組成截然不同的系統。",
+    "industries": {
+      "banking": {
+        "name": "銀行金融",
+        "nodes": ["客戶請求", "代理", "身分驗證", "風險檢查", "人工審核", "銀行 API"]
+      },
+      "hr": {
+        "name": "人力資源",
+        "nodes": ["新進員工", "代理", "HR 系統", "帳號開通", "審核", "通知"]
+      },
+      "support": {
+        "name": "客戶支援",
+        "nodes": ["客戶訊息", "分類", "知識庫搜尋", "代理", "升級"]
+      },
+      "engineering": {
+        "name": "軟體工程",
+        "nodes": ["Issue", "代理", "儲存庫", "程式碼", "測試", "審閱", "部署"]
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "運作方式",
+    "title": "從空白畫布到正式系統，只要四步。",
+    "steps": {
+      "design": {
+        "label": "設計",
+        "title": "設計",
+        "body": "把節點拖到畫布上。用視覺方式設定型別、參數與連線。"
+      },
+      "connect": {
+        "label": "串接",
+        "title": "串接",
+        "body": "把你的工具、API、MCP 伺服器、資料來源、審核佇列全部接上。"
+      },
+      "run": {
+        "label": "執行",
+        "title": "執行",
+        "body": "手動執行、排程執行，或透過 Webhook 觸發。即時檢視每一步。"
+      },
+      "observe": {
+        "label": "觀察",
+        "title": "觀察",
+        "body": "追蹤執行過程、回放執行個案、稽核日誌，並持續優化整張圖。"
+      }
+    }
+  },
+  "architecture": {
+    "eyebrow": "AI 與 MCP 架構",
+    "title": "AI 代理，連結所有事物。",
+    "subtitle": "代理不是活在真空裡。Filament 把它們接到你企業既有的系統上。",
+    "agent": "AI 代理",
+    "agentNote": "推理、規劃、呼叫工具、轉換資料。",
+    "connections": {
+      "crm": "CRM",
+      "database": "資料庫",
+      "files": "檔案",
+      "apis": "API",
+      "internal": "內部工具",
+      "web": "網頁",
+      "code": "程式碼"
+    },
+    "footnote": "每一條連線都是一個節點；每一個節點都可稽核、可版本化、可替換。"
+  },
+  "philosophy": {
+    "eyebrow": "產品哲學",
+    "line1": "人類設計系統。",
+    "line2": "AI 執行系統。",
+    "human": {
+      "title": "人類負責",
+      "items": ["工作流程", "權限", "工具", "業務規則", "審核閘道"]
+    },
+    "ai": {
+      "title": "AI 負責",
+      "items": ["推理", "工具選擇", "執行", "轉換", "生成"]
+    }
+  },
+  "vision": {
+    "eyebrow": "未來藍圖",
+    "title": "Filament 的下一步。",
+    "subtitle": "Stage 1 就是你現在看到的這個靜態網站。下列是 roadmap 項目 —— 不是承諾、也不是已完成產品。",
+    "items": {
+      "visualWorkflows": {
+        "title": "視覺化工作流程",
+        "body": "你在這個頁面看到的東西，會變成一個真正可執行的編輯器。"
+      },
+      "aiAgents": {
+        "title": "AI 代理",
+        "body": "可被持續除錯的代理 —— 而不是無狀態的對話串。"
+      },
+      "multiAgent": {
+        "title": "多代理系統",
+        "body": "多個代理在同一張畫布上協作、協商、交接工作。"
+      },
+      "enterprise": {
+        "title": "企業級自動化",
+        "body": "組織層級的治理、RBAC、稽核與審核政策。"
+      },
+      "os": {
+        "title": "AI 作業系統",
+        "body": "長期願景：工作流程成為 AI 時代主要的運算單位。"
+      }
+    },
+    "tag": "願景 · 即將推出"
+  },
+  "cta": {
+    "title": "打造你的 AI 系統",
+    "subtitle": "Stage 1 是一個靜態展示。Stage 2 將會是一個可實際操作的編輯器。關注 repo、Fork 原始碼，或與我們聯絡一起決定下一步。",
+    "explore": "前往平台",
+    "github": "GitHub 原始碼"
+  },
+  "footer": {
+    "tagline": "用視覺化方式打造 AI 系統。",
+    "links": {
+      "repo": "原始碼",
+      "design": "設計筆記",
+      "license": "授權條款"
+    },
+    "builtWith": "以 React、TypeScript、Vite、Tailwind 打造。Stage 1 —— 純靜態。",
+    "copyright": "© 2026 Filament。概念展示站。尚無引擎、後端、AI API。"
+  }
+}

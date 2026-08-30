@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "product": "Product",
+    "anatomy": "Anatomy",
+    "useCases": "Use Cases",
+    "howItWorks": "How It Works",
+    "vision": "Vision",
+    "explore": "Explore the Platform",
+    "viewGithub": "View on GitHub"
+  },
+  "hero": {
+    "eyebrow": "Visual AI Workflow Platform",
+    "title": "BUILD AI SYSTEMS",
+    "titleAccent": "VISUALLY",
+    "subtitle": "Design, connect, and orchestrate AI agents, tools, and business workflows in a node-based canvas. The way humans build software — now applied to AI.",
+    "ctaPrimary": "Build Your First System",
+    "ctaSecondary": "View on GitHub",
+    "stats": {
+      "components": "Node types",
+      "industries": "Industries ready",
+      "approval": "Human approval gates"
+    },
+    "canvas": {
+      "title": "Live Workflow Canvas",
+      "subtitle": "Interactive preview — drag, zoom, click nodes",
+      "legend": {
+        "trigger": "Trigger",
+        "agent": "AI Agent",
+        "tool": "Tool",
+        "decision": "Decision",
+        "approval": "Human Approval",
+        "output": "Output"
+      },
+      "inspector": {
+        "title": "Node Inspector",
+        "type": "Type",
+        "config": "Configuration",
+        "status": "Status",
+        "statusReady": "Ready",
+        "statusActive": "Active",
+        "close": "Close inspector"
+      },
+      "run": "Run"
+    }
+  },
+  "productCanvas": {
+    "title": "The Canvas, Not a Chat Box",
+    "subtitle": "Your AI workflow is a directed graph of nodes — not a transcript.",
+    "point1": "Every node is a typed primitive: Trigger, Agent, Tool, Decision, Approval, Output.",
+    "point2": "Edges are typed too: data flow, control flow, escalation.",
+    "point3": "Inspect, debug, and version the graph the way you would any production system."
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "title": "PROMPT. CHAT. COPY. PASTE. REPEAT.",
+    "subtitle": "Most teams are using AI the same way they used Google in 2009: one prompt at a time, no memory, no system.",
+    "bullets": [
+      "Every team member prompts the same model in their own words.",
+      "Best results live in private chat history. Nobody else benefits.",
+      "Approve, branch, retry, audit — all done by hand.",
+      "No version control. No review. No compliance trail."
+    ],
+    "tagline": "A chat thread is not a system."
+  },
+  "newParadigm": {
+    "eyebrow": "The New Paradigm",
+    "title": "FROM PROMPTS TO SYSTEMS",
+    "subtitle": "Stop talking to AI. Start designing with it.",
+    "before": {
+      "label": "Before",
+      "steps": ["Human", "Prompt", "AI", "Copy Result", "Human"]
+    },
+    "after": {
+      "label": "After",
+      "steps": ["Trigger", "Agent", "Tools", "Decision", "Approval", "Execution"]
+    },
+    "footnote": "The same AI capability — wrapped in a system humans can own, audit, and improve."
+  },
+  "anatomy": {
+    "eyebrow": "Workflow Anatomy",
+    "title": "Eight building blocks. Infinite systems.",
+    "subtitle": "Every workflow in Filament is composed from these typed primitives. Compose them like LEGO. Or like Grasshopper.",
+    "categories": {
+      "trigger": "Trigger",
+      "ai": "AI",
+      "tools": "Tools",
+      "data": "Data",
+      "logic": "Logic",
+      "mcp": "MCP",
+      "human": "Human",
+      "output": "Output"
+    },
+    "descriptions": {
+      "trigger": "Event sources: webhook, schedule, form, email, file upload, manual run.",
+      "ai": "Reasoning nodes: LLMs, agents, classifiers, planners, retrievers.",
+      "tools": "External actions: web search, send email, create ticket, call API.",
+      "data": "Pipelines: fetch, transform, enrich, vectorize, route documents.",
+      "logic": "Control flow: branch, loop, switch, parallel, join, error path.",
+      "mcp": "Model Context Protocol: connect any MCP server — CRM, DB, files, tools.",
+      "human": "Human-in-the-loop: review, approve, edit, override.",
+      "output": "Result sinks: response, webhook, database, notification, artifact."
+    }
+  },
+  "useCases": {
+    "eyebrow": "Use Cases",
+    "title": "One platform. Every industry.",
+    "subtitle": "The same primitives compose into radically different systems.",
+    "industries": {
+      "banking": {
+        "name": "Banking",
+        "nodes": ["Customer Request", "Agent", "Authentication", "Risk Check", "Human Approval", "Banking API"]
+      },
+      "hr": {
+        "name": "HR",
+        "nodes": ["New Employee", "Agent", "HR System", "Account Provisioning", "Approval", "Notification"]
+      },
+      "support": {
+        "name": "Customer Support",
+        "nodes": ["Customer Message", "Classification", "Knowledge Search", "Agent", "Escalation"]
+      },
+      "engineering": {
+        "name": "Software Engineering",
+        "nodes": ["Issue", "Agent", "Repository", "Code", "Tests", "Review", "Deploy"]
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "title": "From blank canvas to production system in four moves.",
+    "steps": {
+      "design": {
+        "label": "Design",
+        "title": "Design",
+        "body": "Drag nodes onto the canvas. Set types, parameters, and connections visually."
+      },
+      "connect": {
+        "label": "Connect",
+        "title": "Connect",
+        "body": "Wire your tools, APIs, MCP servers, data sources, and approval queues."
+      },
+      "run": {
+        "label": "Run",
+        "title": "Run",
+        "body": "Execute manually, on a schedule, or via webhook. Inspect every step live."
+      },
+      "observe": {
+        "label": "Observe",
+        "title": "Observe",
+        "body": "Trace execution, replay runs, audit logs, and refine the graph over time."
+      }
+    }
+  },
+  "architecture": {
+    "eyebrow": "AI + MCP Architecture",
+    "title": "AI Agents, connected to everything.",
+    "subtitle": "Agents don't work in a vacuum. Filament wires them to the systems where your business already lives.",
+    "agent": "AI Agent",
+    "agentNote": "Reasons, plans, calls tools, transforms data.",
+    "connections": {
+      "crm": "CRM",
+      "database": "Database",
+      "files": "Files",
+      "apis": "APIs",
+      "internal": "Internal Tools",
+      "web": "Web",
+      "code": "Code"
+    },
+    "footnote": "Every connection is a node. Every node is auditable, versioned, and replaceable."
+  },
+  "philosophy": {
+    "eyebrow": "Product Philosophy",
+    "line1": "Human designs the system.",
+    "line2": "AI executes the system.",
+    "human": {
+      "title": "Human owns",
+      "items": ["Workflow", "Permissions", "Tools", "Business Rules", "Approval Gates"]
+    },
+    "ai": {
+      "title": "AI operates",
+      "items": ["Reasoning", "Tool Selection", "Execution", "Transformation", "Generation"]
+    }
+  },
+  "vision": {
+    "eyebrow": "Future Vision",
+    "title": "Where Filament is going.",
+    "subtitle": "Stage 1 is the static site you are reading. The following are roadmap items — not promises, not product yet.",
+    "items": {
+      "visualWorkflows": {
+        "title": "Visual Workflows",
+        "body": "What you see on this page becomes a real, executable editor."
+      },
+      "aiAgents": {
+        "title": "AI Agents",
+        "body": "Persistent, debuggable agents — not stateless chat threads."
+      },
+      "multiAgent": {
+        "title": "Multi-Agent Systems",
+        "body": "Multiple agents collaborating, negotiating, and handing off work on the same canvas."
+      },
+      "enterprise": {
+        "title": "Enterprise Automation",
+        "body": "Org-level governance, RBAC, audit, and approval policies."
+      },
+      "os": {
+        "title": "AI Operating System",
+        "body": "A long-term vision: workflows as the primary unit of computing in the AI era."
+      }
+    },
+    "tag": "Vision · Coming Next"
+  },
+  "cta": {
+    "title": "BUILD YOUR AI SYSTEM",
+    "subtitle": "Stage 1 is a static showcase. Stage 2 will be a working editor. Watch the repo, fork it, or reach out to shape what comes next.",
+    "explore": "Explore the Platform",
+    "github": "View on GitHub"
+  },
+  "footer": {
+    "tagline": "Build AI Systems Visually.",
+    "links": {
+      "repo": "Repository",
+      "design": "Design Notes",
+      "license": "License"
+    },
+    "builtWith": "Built with React, TypeScript, Vite, Tailwind. Stage 1 — static.",
+    "copyright": "© 2026 Filament. Concept site. No engine, no backend, no AI API yet."
+  }
+}

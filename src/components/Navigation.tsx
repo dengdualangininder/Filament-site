@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const LINKS = [
-  { href: '#canvas', label: 'Canvas' },
-  { href: '#problem', label: 'Problem' },
-  { href: '#paradigm', label: 'New Paradigm' },
-  { href: '#anatomy', label: 'Anatomy' },
-  { href: '#usecases', label: 'Use Cases' },
-  { href: '#philosophy', label: 'Philosophy' },
-  { href: '#vision', label: 'Vision' },
+  { href: '#canvas', key: 'nav.product' },
+  { href: '#problem', key: 'nav.problem' },
+  { href: '#paradigm', key: 'nav.newParadigm' },
+  { href: '#anatomy', key: 'nav.anatomy' },
+  { href: '#usecases', key: 'nav.useCases' },
+  { href: '#philosophy', key: 'nav.philosophy' },
+  { href: '#vision', key: 'nav.vision' },
 ]
 
 export function Navigation() {
+  const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -22,12 +24,10 @@ export function Navigation() {
   }, [])
 
   return (
-    <header
-      className={[
-        'fixed inset-x-0 top-0 z-50 transition-all duration-200',
-        scrolled ? 'border-b border-line bg-canvas/85 backdrop-blur-md' : 'border-b border-transparent',
-      ].join(' ')}
-    >
+    <header className={[
+      'fixed inset-x-0 top-0 z-50 transition-all duration-200',
+      scrolled ? 'border-b border-line bg-canvas/85 backdrop-blur-md' : 'border-b border-transparent',
+    ].join(' ')}>
       <nav className="container-page flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5" aria-label="Filament home">
           <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden>
@@ -42,19 +42,25 @@ export function Navigation() {
 
         <div className="hidden items-center gap-7 md:flex">
           {LINKS.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-[13.5px] text-muted transition-colors hover:text-ink"
-            >
-              {l.label}
+            <a key={l.href} href={l.href} className="text-[13.5px] text-muted transition-colors hover:text-ink">
+              {t(l.key)}
             </a>
           ))}
         </div>
 
         <div className="flex items-center gap-2">
+          <select
+            value={i18n.language}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+            className="rounded border border-line bg-canvas px-2 py-1 text-sm"
+          >
+            <option value="en">EN</option>
+            <option value="zh-TW">中文</option>
+            <option value="zh-CN">简体中文</option>
+            <option value="ja">日本語</option>
+          </select>
           <a href="#cta" className="hidden btn-primary !py-2 !px-4 text-[13px] sm:inline-flex">
-            Build your system
+            {t('nav.explore')}
           </a>
           <button
             className="flex h-9 w-9 items-center justify-center rounded-sm border border-line text-ink md:hidden"
@@ -73,18 +79,11 @@ export function Navigation() {
         <div className="border-t border-line bg-canvas md:hidden">
           <div className="container-page flex flex-col py-3">
             {LINKS.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-line/60 py-3 text-sm text-muted last:border-0 hover:text-ink"
-              >
-                {l.label}
+              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-line/60 py-3 text-sm text-muted last:border-0 hover:text-ink">
+                {t(l.key)}
               </a>
             ))}
-            <a href="#cta" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">
-              Build your system
-            </a>
+            <a href="#cta" onClick={() => setOpen(false)} className="btn-primary mt-3 w-full">{t('nav.explore')}</a>
           </div>
         </div>
       )}
