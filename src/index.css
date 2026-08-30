@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: 'ss01', 'cv01';
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(232, 255, 82, 0.28);
+    color: #ecece6;
+  }
+
+  /* Focus: visible, technical, on-brand */
+  :focus-visible {
+    outline: 2px solid #e8ff52;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Scrollbar — thin, dark, technical */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2c30 transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #2a2c30;
+    border-radius: 0;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: #34373c;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-eyebrow text-faint;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8 lg:px-12;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  /* Primary CTA — single signal color, never shifts hue on hover */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-accent px-[22px] py-[14px]
+           font-medium text-canvas transition-colors duration-150
+           hover:bg-[#F2FF8A] focus-visible:outline-none;
+  }
+
+  /* Ghost CTA — hairline border */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-line px-5 py-[13px]
+           font-medium text-ink transition-colors duration-150
+           hover:border-ink/60 hover:bg-white/[0.02] focus-visible:outline-none;
+  }
+
+  /* Canvas grid backdrop */
+  .canvas-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Reduced motion: kill non-essential animation */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .edge-live {
+    stroke-dasharray: none !important;
+  }
+}

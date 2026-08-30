@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none" font-family="'Space Grotesk', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0E0F11"/>
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+
+  <!-- mini node graph, upper-right -->
+  <g transform="translate(820,150)" font-family="'JetBrains Mono', monospace">
+    <rect x="0" y="40" width="150" height="64" rx="4" fill="#181A1D" stroke="#26282C"/>
+    <rect x="8" y="50" width="40" height="6" rx="2" fill="#E8FF52"/>
+    <rect x="8" y="64" width="96" height="6" rx="2" fill="#3A3D42"/>
+    <rect x="8" y="78" width="70" height="6" rx="2" fill="#3A3D42"/>
+
+    <rect x="250" y="0" width="150" height="64" rx="4" fill="#181A1D" stroke="#26282C"/>
+    <rect x="258" y="10" width="40" height="6" rx="2" fill="#7EE0D6"/>
+    <rect x="258" y="24" width="96" height="6" rx="2" fill="#3A3D42"/>
+    <rect x="258" y="38" width="70" height="6" rx="2" fill="#3A3D42"/>
+
+    <rect x="250" y="120" width="150" height="64" rx="4" fill="#181A1D" stroke="#26282C"/>
+    <rect x="258" y="130" width="40" height="6" rx="2" fill="#F0B23E"/>
+    <rect x="258" y="144" width="96" height="6" rx="2" fill="#3A3D42"/>
+    <rect x="258" y="158" width="70" height="6" rx="2" fill="#3A3D42"/>
+
+    <path d="M150 72 C 200 72, 200 32, 250 32" stroke="#ECECE6" stroke-opacity="0.6" stroke-width="1.6" fill="none"/>
+    <path d="M150 72 C 200 72, 200 152, 250 152" stroke="#ECECE6" stroke-opacity="0.6" stroke-width="1.6" fill="none"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="64" y="120" font-size="22" letter-spacing="8" fill="#9AA0A6" font-family="'JetBrains Mono', monospace">FILAMENT</text>
+
+  <!-- headline -->
+  <text x="60" y="300" font-size="92" font-weight="700" letter-spacing="-3" fill="#ECECE6">BUILD AI</text>
+  <text x="60" y="392" font-size="92" font-weight="700" letter-spacing="-3" fill="#ECECE6">SYSTEMS</text>
+  <text x="62" y="478" font-size="92" font-weight="700" letter-spacing="-3" fill="#E8FF52">VISUALLY</text>
+
+  <text x="64" y="540" font-size="22" fill="#9AA0A6" font-family="Inter, Arial, sans-serif">Design, connect, and run enterprise AI workflows — like node-based programming.</text>
+
+  <rect x="64" y="566" width="14" height="14" rx="2" fill="#E8FF52"/>
+</svg>
